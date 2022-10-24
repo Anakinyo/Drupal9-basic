@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: fr
+uuid: 0bec00cb-7b6a-4633-9783-b091e142489f
+name: 'Drupal 9 basic'
+mail: belot.yoann@hotmail.fr
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: fr

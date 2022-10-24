@@ -1,0 +1,11 @@
+uuid: 33cf263a-7b19-44a9-9741-e896c345c74f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.games
+id: node.games
+target_entity_type_id: node
+target_bundle: games
+default_langcode: site_default
+language_alterable: false

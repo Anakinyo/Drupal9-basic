@@ -1,0 +1,44 @@
+uuid: de41f120-9d6c-41b9-8c37-67b37290147f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.games.body
+    - field.field.node.games.comment
+    - field.field.node.games.field_game_end_date
+    - node.type.games
+  module:
+    - datetime
+    - text
+    - user
+id: node.games.teaser
+targetEntityType: node
+bundle: games
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_game_end_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  comment: true
+  langcode: true
