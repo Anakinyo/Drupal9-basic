@@ -1,0 +1,6 @@
+name: Games
+descriptio: Module permettant de créer et améliorer les jeux du centre commercial de la goutte bleue.
+type: module
+core_version_requirement: ^9
+
+package: personnalisé
