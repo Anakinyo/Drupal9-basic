@@ -1,0 +1,37 @@
+<?php
+
+/**
+ * @file
+ * Used to add and/or improve game content type.
+ */
+
+use Drupal\Core\Access\AccessResult;
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Session\AccountInterface;
+use Drupal\Core\Url;
+use Drupal\aggregator\Entity\Feed;
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function aggregator_help($route_name, RouteMatchInterface $route_match) {
+      $path_validator = \Drupal::pathValidator();
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('The my_games module is used to add and/or improve game content type.') . '</p>';
+      $output .= '<h3>' . t('Uses') . '</h3>';
+
+      return $output;
+
+}
+
+/**
+ * Implements hook_preprocess_comment().
+ */
+function my_games_preprocess_comment(&$vars) {
+  // Change the Permalink to display #1 instead of 'Permalink'
+  $comment = $vars['comment'];
+  dump($comment);
+}
+?>
