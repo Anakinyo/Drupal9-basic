@@ -47,3 +47,5 @@ web/README.txt
 web/robots.txt
 web/update.php
 web/web.config
+
+vendor/*
